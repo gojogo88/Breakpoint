@@ -39,4 +39,13 @@ class DataService {
         REF_USERS.child(uid).updateChildValues(userData)  //will create a user in Firebase
     }
     
+    func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping CompletionHandler1) {
+        if groupKey != nil {
+            //send to group ref
+        } else {
+            self.REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId" : uid])
+            sendComplete(true)
+        }
+    }
+    
 }

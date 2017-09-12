@@ -11,6 +11,6 @@ import Firebase
 
 let DB_BASE = Database.database().reference()
 
-//URLS
-
+typealias CompletionHandler = (_ Success: Bool, _ error: Error?) -> ()
+typealias CompletionHandler1 = (_ Success: Bool) -> ()
 
