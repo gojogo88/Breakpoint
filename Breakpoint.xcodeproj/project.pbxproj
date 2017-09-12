@@ -15,6 +15,11 @@
 		6CD181411F6757CB006A1C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1813F1F6757CB006A1C28 /* LaunchScreen.storyboard */; };
 		6CD1814F1F675BFD006A1C28 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1814E1F675BFD006A1C28 /* DataService.swift */; };
 		6CD181521F675C7A006A1C28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD181511F675C7A006A1C28 /* Constants.swift */; };
+		6CFA60FB1F67773D0009733D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA60FA1F67773D0009733D /* AuthVC.swift */; };
+		6CFA60FD1F67774B0009733D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA60FC1F67774B0009733D /* LoginVC.swift */; };
+		6CFA60FF1F6777C90009733D /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA60FE1F6777C90009733D /* InsetTextField.swift */; };
+		6CFA61001F677B130009733D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1814D1F675A08006A1C28 /* GoogleService-Info.plist */; };
+		6CFA61021F677B500009733D /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA61011F677B500009733D /* ShadowView.swift */; };
 		D029280B75FC8EFAD82E41B6 /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DDF5B124540D6E742F835B /* Pods_Breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,10 @@
 		6CD1814D1F675A08006A1C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6CD1814E1F675BFD006A1C28 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6CD181511F675C7A006A1C28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6CFA60FA1F67773D0009733D /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		6CFA60FC1F67774B0009733D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6CFA60FE1F6777C90009733D /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		6CFA61011F677B500009733D /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		C3103A3640E2AF8BED7A5EF6 /* Pods-Breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +107,8 @@
 			children = (
 				6CD181361F6757CB006A1C28 /* FirstViewController.swift */,
 				6CD181381F6757CB006A1C28 /* SecondViewController.swift */,
+				6CFA60FA1F67773D0009733D /* AuthVC.swift */,
+				6CFA60FC1F67774B0009733D /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +116,8 @@
 		6CD181491F675827006A1C28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6CFA60FE1F6777C90009733D /* InsetTextField.swift */,
+				6CFA61011F677B500009733D /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CD181411F6757CB006A1C28 /* LaunchScreen.storyboard in Resources */,
+				6CFA61001F677B130009733D /* GoogleService-Info.plist in Resources */,
 				6CD1813E1F6757CB006A1C28 /* Assets.xcassets in Resources */,
 				6CD1813C1F6757CB006A1C28 /* Main.storyboard in Resources */,
 			);
@@ -282,7 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFA61021F677B500009733D /* ShadowView.swift in Sources */,
+				6CFA60FB1F67773D0009733D /* AuthVC.swift in Sources */,
 				6CD181521F675C7A006A1C28 /* Constants.swift in Sources */,
+				6CFA60FD1F67774B0009733D /* LoginVC.swift in Sources */,
+				6CFA60FF1F6777C90009733D /* InsetTextField.swift in Sources */,
 				6CD181391F6757CB006A1C28 /* SecondViewController.swift in Sources */,
 				6CD181351F6757CB006A1C28 /* AppDelegate.swift in Sources */,
 				6CD181371F6757CB006A1C28 /* FirstViewController.swift in Sources */,
