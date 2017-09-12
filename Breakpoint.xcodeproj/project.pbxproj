@@ -23,6 +23,9 @@
 		6CFA61041F677F470009733D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA61031F677F470009733D /* AuthService.swift */; };
 		6CFA61061F679BBE0009733D /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA61051F679BBE0009733D /* MeVC.swift */; };
 		6CFA61081F679FB10009733D /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA61071F679FB10009733D /* CreatePostVC.swift */; };
+		6CFA610A1F67A25F0009733D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA61091F67A25F0009733D /* UIViewExt.swift */; };
+		6CFA610C1F67A7CD0009733D /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA610B1F67A7CD0009733D /* FeedCell.swift */; };
+		6CFA610E1F67AE760009733D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFA610D1F67AE760009733D /* Message.swift */; };
 		D029280B75FC8EFAD82E41B6 /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DDF5B124540D6E742F835B /* Pods_Breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		6CFA61031F677F470009733D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		6CFA61051F679BBE0009733D /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		6CFA61071F679FB10009733D /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		6CFA61091F67A25F0009733D /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		6CFA610B1F67A7CD0009733D /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		6CFA610D1F67AE760009733D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C3103A3640E2AF8BED7A5EF6 /* Pods-Breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +132,7 @@
 			children = (
 				6CFA60FE1F6777C90009733D /* InsetTextField.swift */,
 				6CFA61011F677B500009733D /* ShadowView.swift */,
+				6CFA610B1F67A7CD0009733D /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +140,7 @@
 		6CD1814A1F67582C006A1C28 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6CFA610D1F67AE760009733D /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 		6CD1814B1F675844006A1C28 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6CFA61091F67A25F0009733D /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -305,16 +314,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFA610A1F67A25F0009733D /* UIViewExt.swift in Sources */,
 				6CFA61021F677B500009733D /* ShadowView.swift in Sources */,
 				6CFA60FB1F67773D0009733D /* AuthVC.swift in Sources */,
 				6CD181521F675C7A006A1C28 /* Constants.swift in Sources */,
 				6CFA60FD1F67774B0009733D /* LoginVC.swift in Sources */,
 				6CFA60FF1F6777C90009733D /* InsetTextField.swift in Sources */,
 				6CD181391F6757CB006A1C28 /* GroupsVC.swift in Sources */,
+				6CFA610C1F67A7CD0009733D /* FeedCell.swift in Sources */,
 				6CD181351F6757CB006A1C28 /* AppDelegate.swift in Sources */,
 				6CFA61061F679BBE0009733D /* MeVC.swift in Sources */,
 				6CFA61081F679FB10009733D /* CreatePostVC.swift in Sources */,
 				6CFA61041F677F470009733D /* AuthService.swift in Sources */,
+				6CFA610E1F67AE760009733D /* Message.swift in Sources */,
 				6CD181371F6757CB006A1C28 /* FeedVC.swift in Sources */,
 				6CD1814F1F675BFD006A1C28 /* DataService.swift in Sources */,
 			);
