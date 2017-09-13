@@ -23,6 +23,11 @@ class CreatePostVC: UIViewController {
         textView.delegate = self
         sendBtn.bindToKeyboard()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailLbl.text = Auth.auth().currentUser?.email
+    }
 
     @IBAction func sendBtnPressed(_ sender: Any) {
         if textView.text != nil && textView.text != "Say something here..." {
@@ -41,6 +46,11 @@ class CreatePostVC: UIViewController {
     
     @IBAction func closeBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    //shuts down the keyboard when user taps outside the textfield
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     

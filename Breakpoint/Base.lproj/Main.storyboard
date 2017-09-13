@@ -195,10 +195,12 @@
                                 <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Say something here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NRn-QL-pYP">
-                                <rect key="frame" x="20" y="178" width="335" height="431"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Say something here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NRn-QL-pYP">
+                                <rect key="frame" x="20" y="178" width="335" height="160"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="MkZ-aS-A8L"/>
+                                </constraints>
                                 <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -224,10 +226,13 @@
                             <constraint firstItem="d6h-tg-v8R" firstAttribute="trailing" secondItem="KfR-Yt-dZH" secondAttribute="trailing" constant="20" id="4bP-yc-fdv"/>
                             <constraint firstItem="o7b-FM-PfM" firstAttribute="top" secondItem="Q87-Si-fWF" secondAttribute="bottom" constant="20" id="68I-Sh-0dJ"/>
                             <constraint firstItem="KfR-Yt-dZH" firstAttribute="leading" secondItem="o7b-FM-PfM" secondAttribute="trailing" constant="20" id="7m0-uG-Yl2"/>
+                            <constraint firstItem="d6h-tg-v8R" firstAttribute="trailing" secondItem="NRn-QL-pYP" secondAttribute="trailing" constant="20" id="A2a-f3-5lx"/>
+                            <constraint firstItem="NRn-QL-pYP" firstAttribute="top" secondItem="o7b-FM-PfM" secondAttribute="bottom" constant="8" id="BZC-RN-IIR"/>
                             <constraint firstItem="Q87-Si-fWF" firstAttribute="top" secondItem="d6h-tg-v8R" secondAttribute="top" id="CVc-IR-rkM"/>
                             <constraint firstItem="o7b-FM-PfM" firstAttribute="leading" secondItem="d6h-tg-v8R" secondAttribute="leading" constant="20" id="Okd-jz-pBo"/>
                             <constraint firstItem="BSQ-om-CC9" firstAttribute="trailing" secondItem="d6h-tg-v8R" secondAttribute="trailing" id="bHN-tA-diS"/>
                             <constraint firstItem="Q87-Si-fWF" firstAttribute="leading" secondItem="d6h-tg-v8R" secondAttribute="leading" id="bZv-fH-fYg"/>
+                            <constraint firstItem="NRn-QL-pYP" firstAttribute="leading" secondItem="d6h-tg-v8R" secondAttribute="leading" constant="20" id="fQe-s4-Asd"/>
                             <constraint firstItem="BSQ-om-CC9" firstAttribute="leading" secondItem="d6h-tg-v8R" secondAttribute="leading" id="i57-7r-Nwb"/>
                             <constraint firstItem="Q87-Si-fWF" firstAttribute="trailing" secondItem="d6h-tg-v8R" secondAttribute="trailing" id="jMd-Ov-fZ4"/>
                             <constraint firstItem="d6h-tg-v8R" firstAttribute="bottom" secondItem="BSQ-om-CC9" secondAttribute="bottom" id="oo5-lb-KFp"/>

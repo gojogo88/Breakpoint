@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //check to see if the current user is nil, present loginVC
         if Auth.auth().currentUser == nil {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")  //instantiate authVC
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)   //how to access the main storyboard
+            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")  //instantiate and returns a viewcontroller(authVC)
             window?.makeKeyAndVisible()
             window?.rootViewController?.present(authVC, animated: true, completion: nil)  //accessing the currently presented view controller (rootviewcontroller) and present authVC on top of that.
         }

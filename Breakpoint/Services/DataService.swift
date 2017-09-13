@@ -48,15 +48,31 @@ class DataService {
         }
     }
     
+    func getUsername(forUID uid: String, handler: @escaping (_ username: String) -> ()) {
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for user in userSnapshot {
+                if user.key == uid {
+                    handler(user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
+    }
+    
     func getAllFeedMessages(handler: @escaping (_ message: [Message]) -> ()) {
-        var messageArray = [Message]()
+        var messageArray = [Message]()  //this is where we will put the contents of datasnapshot retrieved from Firebase
         REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnapshot) in
             guard let feedMessageSnapshot = feedMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
             
+            //1. cycle through every datasnapshot
             for message in feedMessageSnapshot {
-                let content = message.childSnapshot(forPath: "content").value as! String  //pull content from a datasnapshot
+                //2.pull content from a datasnapshot
+                let content = message.childSnapshot(forPath: "content").value as! String
                 let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                //3. create an message using Message model
                 let message = Message(content: content, senderId: senderId)
+                //4. Append it to the array
                 messageArray.append(message)
             }
             handler(messageArray)
